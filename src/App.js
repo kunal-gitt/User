@@ -9,11 +9,11 @@ import UsersList from "./Components/Users/UserList";
 function App() {
   const [userList, setUsersList] = useState([]);
 
-  const addUserHandler = (uName, uAge) => {
+  const addUserHandler = (uName, uAge, uCollage) => {
     setUsersList((prevuserlist) => {
       return [
         ...prevuserlist,
-        { name: uName, age: uAge, id: new Date().getTime() },
+        { name: uName, age: uAge, collage: uCollage, id: new Date().getTime() },
       ];
     });
   };
